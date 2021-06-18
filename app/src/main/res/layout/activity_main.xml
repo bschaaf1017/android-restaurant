@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black">
 
     <RelativeLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
@@ -17,18 +17,49 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:fontFamily="casual"
-            android:text="Feed Your Soul"
+            android:text="Brian Schaaf"
             android:textColor="@color/white"
             android:textSize="24sp"
             android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/text_view_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_restaurant_name"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/icons8_email_50"
+            android:backgroundTint="@color/white"
+<!--            android:text="bschaaf1017@gmail.com"-->
+<!--            android:padding="10dp"-->
+            android:textColor="#3aa8c1" />
+        <TextView
+            android:id="@+id/text_view_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_email"
+            android:layout_centerHorizontal="true"
+            android:text="(404)-563-3499"
+            android:padding="10dp"
+            android:textColor="#3aa8c1" />
+
+        <Button
+            android:id="@+id/button_directions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_phone"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/white"
+            android:text="MY LOCATION"
+            android:textColor="@color/black" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view_starters"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_view_restaurant_name"
+            android:layout_below="@id/button_directions"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="90dp"
             app:cardCornerRadius="15dp">
 
 
@@ -41,7 +72,7 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="159dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/sigmund__pxcje6r0cm_unsplash" />
 
@@ -50,7 +81,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="Starters"
+                    android:text="Experience"
                     android:textColor="@color/white" />
             </LinearLayout>
 

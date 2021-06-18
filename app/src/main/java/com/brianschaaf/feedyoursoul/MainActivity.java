@@ -4,13 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
     CardView startersCard;
     CardView mainCourseCard;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,5 +40,26 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(mainCourseActivityIntent);
             }
         });
+
+        TextView emailTextView = findViewById(R.id.text_view_email);
+        emailTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent launchEmailApp = new Intent(Intent.ACTION_SENDTO);
+                launchEmailApp.setData(Uri.parse("mailto:bschaaf1017@gmail.com")); // only email apps should handle this
+                startActivity(launchEmailApp);
+            }
+        });
+        Button buttonDirections = findViewById((R.id.button_directions));
+        buttonDirections.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String uri = "geo:0,0?q=276+Glen+Iris+Drive%2C+GA?z=10";
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse(uri));
+                startActivity(intent);
+            }
+        });
+
     }
 }
