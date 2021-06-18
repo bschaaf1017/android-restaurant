@@ -22,25 +22,55 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/text_view_email"
+        <LinearLayout
+            android:id="@+id/linear_layout_buttons"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/text_view_restaurant_name"
-            android:layout_centerHorizontal="true"
-            android:drawableLeft="@drawable/icons8_email_50"
-            android:backgroundTint="@color/white"
-<!--            android:text="bschaaf1017@gmail.com"-->
-<!--            android:padding="10dp"-->
-            android:textColor="#3aa8c1" />
+            >
+
+            <Button
+                android:id="@+id/text_view_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/icons8_email_24"
+                android:textColor="@color/black"
+                android:text="email"/>
+
+            <Button
+                android:id="@+id/button_linkedin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/icons8_linkedin_24"
+                android:text="linkedin"
+                android:textColor="@color/black"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"/>
+            <Button
+                android:id="@+id/button_git_hub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/icons8_github_24"
+                android:text="git hub"
+                android:textColor="@color/black"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"/>
+
+        </LinearLayout>
+
         <TextView
             android:id="@+id/text_view_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_view_email"
+            android:layout_below="@id/linear_layout_buttons"
             android:layout_centerHorizontal="true"
-            android:text="(404)-563-3499"
             android:padding="10dp"
+            android:text="(404)-563-3499"
             android:textColor="#3aa8c1" />
 
         <Button

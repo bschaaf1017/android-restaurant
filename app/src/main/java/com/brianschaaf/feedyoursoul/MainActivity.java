@@ -50,6 +50,17 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(launchEmailApp);
             }
         });
+        Button linkedInButton = findViewById(R.id.button_linkedin);
+        linkedInButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String linkedinURL = "https://www.linkedin.com/in/brian-schaaf/";
+                Intent launchLinkedIn = new Intent(Intent.ACTION_VIEW);
+                launchLinkedIn.setData(Uri.parse(linkedinURL));
+                startActivity(launchLinkedIn);
+            }
+        });
+
         Button buttonDirections = findViewById((R.id.button_directions));
         buttonDirections.setOnClickListener(new View.OnClickListener() {
             @Override
