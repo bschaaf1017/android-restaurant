@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         startersCard = findViewById(R.id.card_view_starters);
         mainCourseCard = findViewById(R.id.card_view_main);
         emailText = findViewById(R.id.text_view_email);
+        dessertCard = findViewById(R.id.card_view_dessert);
 
 
         emailText.setOnClickListener(new View.OnClickListener() {
