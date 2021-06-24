@@ -9,14 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FeedYourSoul">
-        <activity android:name=".DessertActivity"></activity>
+        <activity android:name=".DessertActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Desserts"
+            />
         <activity
             android:name=".MainCourseActivity"
-            android:label="MainCourse"
+            android:label="Main Course"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".StartersActivity"
-            android:label="Starters"
+            android:label="Small Plates"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
