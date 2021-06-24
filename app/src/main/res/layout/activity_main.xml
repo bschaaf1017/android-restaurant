@@ -22,11 +22,23 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
+        <TextView
+            android:id="@+id/text_view_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="feedYourSoul@reallygood.com"
+            android:textColor="@color/teal_700"
+            android:layout_below="@id/text_view_restaurant_name"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            />
+
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view_starters"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_view_restaurant_name"
+            android:layout_below="@id/text_view_email"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="60dp"
             app:cardCornerRadius="15dp">
@@ -84,6 +96,38 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:text="Main Course"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_dessert"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_main"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            app:cardCornerRadius="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#808080"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/desserts" />
+
+                <TextView
+                    android:id="@+id/text_view_dessert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Desserts"
                     android:textColor="@color/white" />
             </LinearLayout>
 
